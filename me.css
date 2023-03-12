@@ -1,0 +1,50 @@
+.topnav{
+    /* background-color: rgb(206, 200, 200); */
+    width: 1200px;
+    padding: 10px;
+    display: flex;
+    justify-content:end;
+    
+}
+.topnav a {
+    padding-left:40px ;
+    text-decoration: none;
+    
+}
+.m-div1{
+    margin-top: 120px;
+    margin-left: 140px;
+}
+#p1{
+    font-size: 50px;
+}
+#name{
+    color: rgb(245, 9, 9);
+}
+#p2{
+    font-size: 30px;
+    color: blue;
+}
+#me{
+    color: cyan;
+    background-color: black;
+    border-radius: 8px;
+    padding: 10px;
+}
+#icon{
+    padding-top: 50px;
+    display: flex;
+    
+}
+#icon.a{
+    /* padding-left: px; */
+    
+    
+
+}
+/* #icon.a.img{ */
+    /* padding-left: 50px; */
+/* } */
+.pic{
+    padding-left: 40px;
+}
