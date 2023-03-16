@@ -12,12 +12,12 @@
     <section >
         <div class="topnav">
             <div>
-                <a href="#demo"><b>Home</b> </a>
-                <a href="#"><b>About</b></a>
-                <a href="#"><b>Skills</b></a>
-                <a href="#"><b>Education</b></a>
-                <a href="#"><b>Work</b></a>
-                <a href="#"><b>Contact</b></a>
+                <a href="#"><b>Home</b> </a>
+                <a href="#" onclick="openModal()"><b>About</b></a>
+                <a href="#" onclick="openModal1()"><b>Skills</b></a>
+                <a href="#" onclick="openModal2()"><b>Education</b></a>
+                <a href="#" onclick="openModal3()"><b>Work</b></a>
+                <a href="#" onclick="openModal4()"><b>Contact</b></a>
 
             </div>
 
@@ -51,25 +51,159 @@
             </div>
 
         </div>
+        <div id="MyPopup" class="modal">
+            <div class="content">
+              <div >
+                <span class="close" onclick="closeModal()">close</span>
+                <span id="test"></span>
+                
+              </div>
+            </div>
+        </div>
+
+        <!-- 2nd modal -->
+
+        <div id="ThisPopup" class="modal">
+            <div class="content">
+              <div >
+                <span class="close" onclick="closeModal1()">close</span>
+                <span id="tom"></span>
+                
+              </div>
+            </div>
+        </div>
+
+        <!-- 3rd modal -->
+
+        <div id="EduPopup" class="modal">
+            <div class="content">
+              <div >
+                <span class="close" onclick="closeModal2()">close</span>
+                <span id="tod"></span>
+                
+              </div>
+            </div>
+        </div>
+
+        <!-- 4th modal -->
+
+        <div id="WorkPopup" class="modal">
+            <div class="content">
+              <div >
+                <span class="close" onclick="closeModal3()">close</span>
+                <span id="tot"></span>
+                
+              </div>
+            </div>
+        </div>
+
+        <!-- 5th modal -->
+
+        <div id="8Popup" class="modal">
+            <div class="content">
+              <div >
+                <span class="close" onclick="closeModal4()">close</span>
+                <span id="ton"></span>
+                
+              </div>
+            </div>
+        </div>
+
+
+
     </section>
     <section id="demo">
-        <h2> this a demo content </h2>
-        <p> somthing .... Find Paragraph example at FindResultsQuickly.
-             Find Paragraph example. Relevant Results. Search Now. Attractive Results.
-              More Info. Awesome Info. Fast Response. Get Latest Info. Get More Results.
-               Latest Today. Find it Here. Services: Answers, Information, Social.</p>
-               <p> somthing .... Find Paragraph example at FindResultsQuickly.
-                Find Paragraph example. Relevant Results. Search Now. Attractive Results.
-                 More Info. Awesome Info. Fast Response. Get Latest Info. Get More Results.
-                  Latest Today. Find it Here. Services: Answers, Information, Social.</p>
-                  <p> somthing .... Find Paragraph example at FindResultsQuickly.
-                    Find Paragraph example. Relevant Results. Search Now. Attractive Results.
-                     More Info. Awesome Info. Fast Response. Get Latest Info. Get More Results.
-                      Latest Today. Find it Here. Services: Answers, Information, Social.</p>
-
+        <div id="">
+            
+        </div>
 
 
     </section>
+    <script>
+        let modal = document.getElementById("MyPopup");
+
+
+        function openModal(){
+            modal.style.display = "block"
+            let popup1 = document.getElementById("test")
+            
+            let  file = "mahabub.html"
+            fetch (file)
+            .then(x=>x.text())
+            .then(y=>popup1.innerHTML = y)
+        }
+        function closeModal(){
+            modal.style.display = "none"
+        }
+
+        // 2nd popup
+        
+        let modal1 = document.getElementById("ThisPopup");
+
+        function openModal1(){
+            modal1.style.display = "block"
+            let skills = document.getElementById("tom") 
+            let AAA = "skills.html"
+            fetch (AAA)
+            .then(a=>a.text())
+            .then(b=>skills.innerHTML =b)
+            
+        }
+        function closeModal1(){
+            modal1.style.display = "none"
+        }
+
+        // 3rd popup
+
+        let modal2 = document.getElementById("EduPopup");
+        function openModal2(){
+            modal2.style.display = "block"
+            let Edu = document.getElementById("tod")
+            let BBB = "education.html"
+            fetch (BBB)
+            .then(a=>a.text())
+            .then(b=>Edu.innerHTML =b)
+
+        }
+        function closeModal2(){
+            modal2.style.display = "none"
+        }
+
+        // 4th popup
+
+        let modal3 = document.getElementById("WorkPopup");
+        function openModal3(){
+            modal3.style.display = "block"
+            let Edu = document.getElementById("tot")
+            let ccc = "work.html"
+            fetch (ccc)
+            .then(a=>a.text())
+            .then(b=>Edu.innerHTML= b)
+        }
+
+        function closeModal3(){
+            modal3.style.display = "none"
+        }
+
+        // 5th popup
+
+        let modal4 = document.getElementById("8Popup");
+
+        function openModal4(){
+            modal4.style.display = "block"
+            let ttt = document.getElementById("ton")
+            let ddd = "Contact.html"
+            fetch (ddd)
+            .then(a=>a.text())
+            .then(b=>ttt.innerHTML= b)
+
+        }
+        function closeModal4(){
+            modal4.style.display = "none"
+        }
+
+       
+    </script>
     
 </body>
 </html>
