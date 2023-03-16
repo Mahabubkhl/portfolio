@@ -55,7 +55,7 @@
             <div class="content">
               <div >
                 <span class="close" onclick="closeModal()">close</span>
-                <span id="test"></span>
+                <span id="test"> loading.....</span>
                 
               </div>
             </div>
@@ -67,7 +67,7 @@
             <div class="content">
               <div >
                 <span class="close" onclick="closeModal1()">close</span>
-                <span id="tom"></span>
+                <span id="tom">loading.....</span>
                 
               </div>
             </div>
@@ -79,7 +79,7 @@
             <div class="content">
               <div >
                 <span class="close" onclick="closeModal2()">close</span>
-                <span id="tod"></span>
+                <span id="tod">loading.....</span>
                 
               </div>
             </div>
@@ -91,7 +91,7 @@
             <div class="content">
               <div >
                 <span class="close" onclick="closeModal3()">close</span>
-                <span id="tot"></span>
+                <span id="tot">loading.....</span>
                 
               </div>
             </div>
@@ -103,7 +103,7 @@
             <div class="content">
               <div >
                 <span class="close" onclick="closeModal4()">close</span>
-                <span id="ton"></span>
+                <span id="ton">loading.....</span>
                 
               </div>
             </div>
@@ -192,7 +192,7 @@
         function openModal4(){
             modal4.style.display = "block"
             let ttt = document.getElementById("ton")
-            let ddd = "Contact.html"
+            let ddd = "contact.html"
             fetch (ddd)
             .then(a=>a.text())
             .then(b=>ttt.innerHTML= b)
